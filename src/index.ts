@@ -216,6 +216,9 @@ async function main(): Promise<void> {
   log("info", "Done");
 }
 
+// Execute main
+// eslint-disable-next-line no-console 
+
 main().catch((err) => {
   log("error", "Unhandled error", {
     name: err instanceof Error ? err.name : "Unknown",
